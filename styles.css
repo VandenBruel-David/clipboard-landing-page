@@ -1,0 +1,323 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+p {
+  color: hsl(201, 11%, 66%);
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+}
+h1 {
+  font-size: 46px;
+}
+h2 {
+  font-size: 36px;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding-top: 8rem;
+}
+.history-text {
+  font-size: 21px;
+  max-width: 750px;
+  padding-top: 1rem;
+}
+.snippets-text {
+  max-width: 750px;
+  padding-top: 1rem;
+}
+.header-text2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.hero-box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.hero-box2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+
+  gap: 4rem;
+}
+.hero-text2 {
+  padding-bottom: 5rem;
+  padding-top: 10rem;
+}
+.hero-text3 {
+  text-align: center;
+  padding-top: 4rem;
+}
+.supercharge {
+  padding-top: 1rem;
+}
+.container1 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 10rem;
+
+  flex-wrap: wrap;
+}
+.clipboard-text {
+  text-align: center;
+  padding: 4rem;
+}
+.download-buttons {
+  text-align: center;
+}
+.blacklist {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 400px;
+}
+.snippets {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem;
+  max-width: 400px;
+}
+.sneak-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem;
+  max-width: 400px;
+}
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.download-button1 {
+  background-color: hsl(171, 66%, 44%);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+.download-button1:hover {
+  opacity: 0.7;
+}
+.download-button2 {
+  background-color: hsl(233, 100%, 69%);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+.download-button2:hover {
+  opacity: 0.7;
+}
+.download-button1 > a,
+.download-button2 > a {
+  color: white;
+}
+.acces {
+  max-width: 750px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ios {
+  text-align: center;
+  padding-top: 1rem;
+  max-width: 750px;
+}
+footer {
+  background-color: hsl(201, 11%, 97%);
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.social-media {
+  display: flex;
+  gap: 2rem;
+}
+.footer-links1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-links2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-links3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.links {
+  display: flex;
+  gap: 6rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.footer-links1 > a {
+  color: hsl(210, 10%, 33%);
+}
+.footer-links2 > a {
+  color: hsl(210, 10%, 33%);
+}
+.footer-links3 > a {
+  color: hsl(210, 10%, 33%);
+}
+.download-buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 8rem;
+}
+.footer-links1 > a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.footer-links2 > a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.footer-links3 > a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.facebook-icon img:nth-child(2) {
+  display: none;
+}
+.facebook-icon:hover img:nth-child(1) {
+  display: none;
+}
+.facebook-icon:hover img:nth-child(2) {
+  display: block;
+}
+
+.twitter-icon img:nth-child(2) {
+  display: none;
+}
+.twitter-icon:hover img:nth-child(1) {
+  display: none;
+}
+.twitter-icon:hover img:nth-child(2) {
+  display: block;
+}
+.instagram-icon img:nth-child(2) {
+  display: none;
+}
+.instagram-icon:hover img:nth-child(1) {
+  display: none;
+}
+.instagram-icon:hover img:nth-child(2) {
+  display: block;
+}
